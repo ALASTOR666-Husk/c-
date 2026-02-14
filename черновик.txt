@@ -14,21 +14,3 @@
 
 Таблица должна иметь 18 столбцов вертикально и горизонтально.
 
-Прототип
-int main() {
-    std::cout << "18-тиричная таблица умножения:\n\n";
-    std::cout << "   ";
-    for (int m = 0; m < 18; m++) {
-        std::cout << std::setw(3) << to_base18(m);
-    }
-    std::cout << "\n";
-    for (int m = 0; m < 18; m++) {
-    std::cout << std::setw(2) << to_base18(m) << "   ";
-    for (int y = 0; y < 18; y++) {
-    std::cout << std::setw(3) << to_base18(m * y);
-    }
-    std::cout << "\n";
-    }
-    
-    return 0;
-}
