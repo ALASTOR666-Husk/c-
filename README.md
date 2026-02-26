@@ -69,7 +69,7 @@ void getHelp(){
 }
 
 
-
+(задача 2
 int main(
     int argc, char* argv[]){
     setlocale(LC_ALL, "");
@@ -97,4 +97,5 @@ int main(
    return n;
 
 }
+)
 )
