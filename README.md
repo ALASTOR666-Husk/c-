@@ -24,7 +24,7 @@
 g++ (ccc.cpp - название папки) -o app - компиляция программы
 
 ./app - запуск программы
-
+( задача 1
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -56,3 +56,45 @@ int main() {
     }
     return 0;
 }
+)
+
+(
+    #include <string>
+
+
+
+void getHelp(){
+    std::cout<<"Здесь будет помощь."<<"\n";
+    
+}
+
+
+
+int main(
+    int argc, char* argv[]){
+    setlocale(LC_ALL, "");
+    bool needHelp=false;
+    std::string helpString;
+    helpString = "--help";
+
+    for (int a=0; a < argc; a++){
+        std::cout << "argv [" << a << "] = " <<argv[ a ] << "\n";
+        if (helpString==argv[a]){
+           needHelp=true;
+        };  
+  }
+    if(needHelp){
+        getHelp();
+  };
+  // std::string helpString;
+   // if ( helpString == "--help") {
+   //     getHelp();
+  // };
+    /*std::cerr<<"ERROR"
+            <<std::endl;
+   int n;
+   std::cin >> n;
+   return n;
+
+}
+)
