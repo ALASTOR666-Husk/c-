@@ -41,3 +41,4 @@ g++ (ccc.cpp - название папки) -o app - компиляция про
 
 ./app - запуск программы
 g++ -Wall ccc.cpp stone.cpp -o app.exe
+git pull --no-rebase - для починки при расхождении версий (потом заново сделать комит начиная с git status кончая git push)
