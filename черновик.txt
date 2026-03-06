@@ -40,3 +40,4 @@
 g++ (ccc.cpp - название папки) -o app - компиляция программы
 
 ./app - запуск программы
+g++ -Wall ccc.cpp stone.cpp -o app.exe
