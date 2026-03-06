@@ -3,9 +3,6 @@
 #include "stone.h"
 using namespace std;
 
-int main() {
-    get_help();
-return 0;
+void get_help(){
+    cout << "Roo" << endl;
 }
-
-
