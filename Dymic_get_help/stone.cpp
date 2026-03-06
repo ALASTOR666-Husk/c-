@@ -2,10 +2,10 @@
 #include <string>
 using namespace std;
 
-#define Author "ABC"
+#define Author "NOW RUN"
 
 
 void get_help() {
 
-    cout << "Roo " << Author << endl;
+    cout << "Roo is here " << Author << endl;
 }
