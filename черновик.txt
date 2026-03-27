@@ -41,4 +41,23 @@ g++ (ccc.cpp - название папки) -o app - компиляция про
 
 ./app - запуск программы
 g++ -Wall ccc.cpp stone.cpp -o app.exe
-git pull --no-rebase - для починки при расхождении версий (потом заново сделать комит начиная с git status кончая git push)
+git pull --no-rebase - для починки при расхождении версий (потом заново сделать комит начиная с git status кончая git push)\
+
+то что сделал Сухов
+ 62  g++ ./c.cpp stone.cpp -o rrr
+   63  ./rrr 
+   64  g++ -fPIC -c stone.cpp -o stone.o
+   65  file stone.o
+   66  g++ -shared -o libstone.so stone.o
+   67  file libstone.so 
+   68  g++ c.cpp -L. -lstone -o dynam
+   69  ./dynam 
+   70  ldd ./dynam 
+   71  LD_LIBRARY_PATH=. ./dynam 
+   72  sudo -sH
+   73  env | grep LD
+   74  ldd ./dynam 
+   75  ./dynam 
+
+   g++ -fPIC -c stone.cpp -o stone.o
+   g++ -shared stone.o -o libstone.so

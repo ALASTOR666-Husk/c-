@@ -97,6 +97,3 @@ int main(
    return n;
 
 }
-)
-)
->>>>>>> 87bbe0a66ad2aae3211b6ea93f0d9d0721d1505d
