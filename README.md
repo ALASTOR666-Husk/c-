@@ -103,19 +103,19 @@ int main(
 
 
 (прикол)
+
+#include <iostream>
 #include <fstream>
 
-void foo(int a, int b) {
-    std::ofstream file("result.txt");
-    file << a + b;
+void foo(int a, int b, const std::string& filename = "ref.h") {
+    std::ofstream out(filename);
+    if (out) { 
+        out << a + b << "\n";
+    }
 }
 
-int main()
-{
-    int a = 5;
-    int b = 10;
-
-    foo(a, b);
-
+int main() {
+    foo(10, 5); 
     return 0;
 }
+
