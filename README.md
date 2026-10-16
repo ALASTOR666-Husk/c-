@@ -97,3 +97,25 @@ int main(
    return n;
 
 }
+
+
+
+
+
+(прикол)
+#include <fstream>
+
+void foo(int a, int b) {
+    std::ofstream file("result.txt");
+    file << a + b;
+}
+
+int main()
+{
+    int a = 5;
+    int b = 10;
+
+    foo(a, b);
+
+    return 0;
+}
